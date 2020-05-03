@@ -1,14 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React, { StrictMode } from "react";
+import ReactDOM from "react-dom";
+import * as serviceWorker from "./serviceWorker";
+
+import "typeface-roboto";
+import "typeface-roboto-condensed";
+import { Reset } from "./styles/reset";
+import App from "./cv/App";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <StrictMode>
+    <Reset />
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </StrictMode>,
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
