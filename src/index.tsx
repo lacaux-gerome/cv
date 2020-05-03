@@ -4,6 +4,8 @@ import * as serviceWorker from "./serviceWorker";
 
 import "typeface-roboto";
 import "typeface-roboto-condensed";
+import "typeface-work-sans";
+import "typeface-montserrat";
 import { Reset } from "./styles/reset";
 import App from "./cv/App";
 

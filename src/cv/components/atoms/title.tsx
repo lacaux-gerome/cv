@@ -34,7 +34,7 @@ export const Title = styled(
   }
 )`
   color: ${color.primary.base};
-  font-family: ${fontFamilyName.robotoCondensed};
+  font-family: ${fontFamilyName.montserrat};
   ${switchProp("type", {
     h1: css`
       font-size: ${rem(32)};

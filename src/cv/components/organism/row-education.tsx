@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { EducationType } from "../../content";
 
 import { ContentWrapper } from "../layout/content";
-import { space, color, fontFamilyName } from "../../../styles/const";
+import { space, color } from "../../../styles/const";
 import { Title } from "../atoms/title";
 
 type RowEducationProps = EducationType;
@@ -16,7 +16,7 @@ const RowEducationInner = styled.div`
 `;
 
 const RowEducationContent = styled.p`
-  font-family: ${fontFamilyName.robotoCondensed};
+  font-size: ${rem(14)};
   color: ${color.primary.light};
   margin-top: ${rem(5)};
 `;

@@ -27,6 +27,8 @@ export const rawSpace = {
 export const fontFamilyName = {
   roboto: "Roboto",
   robotoCondensed: "Roboto Condensed",
+  workSans: "Work Sans",
+  montserrat: "Montserrat",
 };
 export const space = {
   base: rem(16),
@@ -50,6 +52,8 @@ export const font = {
     normal: 400,
     semiBold: 600,
     bold: 700,
+    bolder: 800,
+    black: 900,
   },
 };
 

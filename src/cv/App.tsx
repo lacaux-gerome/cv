@@ -11,10 +11,13 @@ import { content } from "./content";
 
 import { RowExperience } from "./components/organism/row-experience";
 import { RowEducation } from "./components/organism/row-education";
+import { RowContact } from "./components/organism/row-contact";
 
 const HeadingDivider = styled.hr`
   height: ${rem(10)};
   width: 100%;
+  position: sticky;
+  top: 0;
   background-color: ${color.secondary.base};
 `;
 const ExperienceWrapper = styled.div`
@@ -38,6 +41,7 @@ export const App = () => {
             );
           })}
           <RowEducation {...content.fr.education} />
+          <RowContact {...content.fr.contact} />
         </ExperienceWrapper>
       </MainWrapper>
     </>
@@ -46,10 +50,10 @@ export const App = () => {
 
 const Head = () => (
   <ContentWrapper>
-    <Title style={{ alignSelf: "flex-end" }} type="h1">
-      Résumé
-    </Title>
     <div>
+      <Title style={{ alignSelf: "flex-end" }} type="h4">
+        Résumé
+      </Title>
       <Title type="h1" style={{ display: "inline-block" }} bold>
         Gérome Lacaux
       </Title>

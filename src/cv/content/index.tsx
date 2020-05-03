@@ -13,6 +13,7 @@ export type ExperienceAdditionalInfosType = {
 export type ExperienceMainInfosType = {
   title: string;
   explanation: JSX.Element;
+  status: string;
 };
 
 //
@@ -28,6 +29,21 @@ export type EducationContentType = {
 };
 
 //
+// --- Contact
+//
+export type ContactType = {
+  title: string;
+  contacts: ContactMap;
+};
+type ContactMap = Record<
+  string,
+  {
+    label: string;
+    url: string;
+    content: string;
+  }
+>;
+//
 // --- Global
 //
 type Data = {
@@ -36,6 +52,7 @@ type Data = {
     additionalInfos: ExperienceAdditionalInfosType;
   }[];
   education: EducationType;
+  contact: ContactType;
 };
 type Content = Record<SupportedLanguage, Data>;
 
@@ -44,6 +61,7 @@ export const content: Content = {
     experiences: [
       {
         mainInfos: {
+          status: "CDI",
           title: "Front-end developpeur Ouihelp",
           explanation: (
             <>
@@ -60,6 +78,7 @@ export const content: Content = {
       },
       {
         mainInfos: {
+          status: "Alternant",
           title: "Front-end developpeur Wizzmedia",
           explanation: (
             <>
@@ -78,6 +97,7 @@ export const content: Content = {
       },
       {
         mainInfos: {
+          status: "Stage",
           title: "Front-end developpeur SNCF",
           explanation: (
             <>
@@ -107,6 +127,26 @@ export const content: Content = {
           name: "Aix-Marseille Université, Mathématique suppérieur",
         },
       ],
+    },
+    contact: {
+      title: "Contact",
+      contacts: {
+        github: {
+          label: "Github",
+          content: "github.com/lacaux-gerome",
+          url: "https://github.com/lacaux-gerome",
+        },
+        mail: {
+          label: "Email",
+          url: "&to=gerome.lacaux@hetic.net&su=Hello 👋🏻",
+          content: "gerome.lacaux@hetic.net",
+        },
+        linkedin: {
+          label: "Linkedin",
+          url: "https://www.linkedin.com/in/gerome-lacaux/",
+          content: "linkedin/gerome-lacaux",
+        },
+      },
     },
   },
 };

@@ -20,10 +20,14 @@ const ExperienceMainInfosContent = styled.p`
 export const ExperienceMainInfos = ({
   title,
   explanation,
+  status,
 }: ExperienceMainInfosProps) => {
   return (
     <div>
-      <ExperienceMainInfosTitle type="h4" bold>
+      <Title type="h6" italic>
+        {status}
+      </Title>
+      <ExperienceMainInfosTitle type="h5" bold>
         {title}
       </ExperienceMainInfosTitle>
       <ExperienceMainInfosContent>{explanation}</ExperienceMainInfosContent>
