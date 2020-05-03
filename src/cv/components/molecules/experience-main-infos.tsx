@@ -24,9 +24,7 @@ export const ExperienceMainInfos = ({
 }: ExperienceMainInfosProps) => {
   return (
     <div>
-      <Title type="h6" italic>
-        {status}
-      </Title>
+      <Title type="h6">{status}</Title>
       <ExperienceMainInfosTitle type="h5" bold>
         {title}
       </ExperienceMainInfosTitle>

@@ -20,7 +20,6 @@
     "typeface-montserrat": "^0.0.75",
     "typeface-roboto": "^0.0.75",
     "typeface-roboto-condensed": "^0.0.75",
-    "typeface-work-sans": "^0.0.72",
     "typescript": "~3.7.2"
   },
   "scripts": {

@@ -27,7 +27,6 @@ export const rawSpace = {
 export const fontFamilyName = {
   roboto: "Roboto",
   robotoCondensed: "Roboto Condensed",
-  workSans: "Work Sans",
   montserrat: "Montserrat",
 };
 export const space = {

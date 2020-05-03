@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-
 import { rem } from "polished";
-import "./App.css";
+
 import { color, space } from "../styles/const";
 import { MainWrapper } from "./components/layout/main";
 import { Title } from "./components/atoms/title";
