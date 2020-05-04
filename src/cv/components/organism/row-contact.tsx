@@ -1,10 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import { rem } from "polished";
+import breakpoint from "styled-components-breakpoint";
 
 import { ContactType } from "../../content";
 import { Title } from "../atoms/title";
-import { space, color, font, fontFamilyName } from "../../../styles/const";
+import {
+  space,
+  color,
+  font,
+  fontFamilyName,
+  device,
+} from "../../../styles/const";
 import { ContentWrapper } from "../layout/content";
 import { LinkToEmail, Link } from "../atoms/link";
 
@@ -22,12 +29,19 @@ const RowContactLabel = styled.span`
   font-weight: ${font.weight.bold};
 `;
 const RowContactContentWrapper = styled(ContentWrapper)`
-  grid-row-gap: ${rem(2)};
+  ${breakpoint("tablet")`
+    grid-row-gap: ${rem(2)};
+  `}
+  grid-row-gap: ${rem(6)};
 `;
 const ContactAdditionnalContent = styled.p`
-  font-family: ${fontFamilyName.robotoCondensed};
-  color: ${color.primary.light};
-  margin-top: ${rem(5)};
+  display: none;
+  @media (min-width: ${rem(device.portraitTablet)}) {
+    font-family: ${fontFamilyName.robotoCondensed};
+    color: ${color.primary.light};
+    margin-top: ${rem(5)};
+    display: block;
+  }
 `;
 const WrapperTitleContact = styled.div`
   margin-bottom: ${space.sm};

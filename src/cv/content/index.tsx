@@ -2,6 +2,7 @@ import { frenchContent } from "./french-content";
 import { enContent } from "./english-content";
 
 export type SupportedLanguage = "fr" | "en";
+
 //
 // --- Experience
 //
@@ -44,6 +45,7 @@ type ContactMap = Record<
     explanation: string;
   }
 >;
+
 //
 // --- Global
 //

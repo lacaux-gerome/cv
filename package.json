@@ -16,6 +16,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "styled-components": "^5.1.0",
+    "styled-components-breakpoint": "^3.0.0-preview.20",
     "styled-tools": "^1.7.1",
     "typeface-montserrat": "^0.0.75",
     "typeface-roboto": "^0.0.75",
