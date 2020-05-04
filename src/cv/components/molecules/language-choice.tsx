@@ -68,6 +68,7 @@ export const LanguageChoice = ({
     <LanguageChoiceWrapper>
       {supportedLanguages.map((supportedLanguage, index) => (
         <SupportedLanguageContent
+          key={index}
           isNotLastItem={!(index === supportedLanguages.length - 1)}
           isActive={chosenLanguage === supportedLanguage.value}
           onClick={onClickSetChosenLanguage(supportedLanguage.value)}
