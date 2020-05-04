@@ -1,6 +1,7 @@
 import { frenchContent } from "./french-content";
+import { enContent } from "./english-content";
 
-type SupportedLanguage = "fr";
+export type SupportedLanguage = "fr" | "en";
 //
 // --- Experience
 //
@@ -40,12 +41,14 @@ type ContactMap = Record<
     label: string;
     url: string;
     content: string;
+    explanation: string;
   }
 >;
 //
 // --- Global
 //
-type Data = {
+export type LangData = {
+  mainTitle: string;
   experiences: {
     mainInfos: ExperienceMainInfosType;
     additionalInfos: ExperienceAdditionalInfosType;
@@ -53,8 +56,9 @@ type Data = {
   education: EducationType;
   contact: ContactType;
 };
-type Content = Record<SupportedLanguage, Data>;
+type Content = Record<SupportedLanguage, LangData>;
 
 export const content: Content = {
   fr: frenchContent,
+  en: enContent,
 };

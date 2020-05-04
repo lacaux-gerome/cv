@@ -42,14 +42,18 @@ export const RowContact = (props: RowContactProps) => {
         </Title>
       </WrapperTitleContact>
       <RowContactContentWrapper>
-        <ContactAdditionnalContent>the best one</ContactAdditionnalContent>
+        <ContactAdditionnalContent>
+          {props.contacts["mail"].explanation}
+        </ContactAdditionnalContent>
         <RowContactContent>
           <RowContactLabel>{props.contacts["mail"].label} :</RowContactLabel>{" "}
           <LinkToEmail url={props.contacts["mail"].url}>
             {props.contacts["mail"].content}
           </LinkToEmail>
         </RowContactContent>
-        <ContactAdditionnalContent>to see how i code</ContactAdditionnalContent>
+        <ContactAdditionnalContent>
+          {props.contacts["github"].explanation}
+        </ContactAdditionnalContent>
         <RowContactContent>
           <RowContactLabel>{props.contacts["github"].label} :</RowContactLabel>{" "}
           <Link href={props.contacts["github"].url} target="#blank">
@@ -57,7 +61,7 @@ export const RowContact = (props: RowContactProps) => {
           </Link>
         </RowContactContent>
         <ContactAdditionnalContent>
-          to learn more about me
+          {props.contacts["linkedin"].explanation}
         </ContactAdditionnalContent>
         <RowContactContent>
           <RowContactLabel>

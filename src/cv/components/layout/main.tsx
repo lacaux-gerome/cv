@@ -7,5 +7,5 @@ export const MainWrapper = styled.div`
   width: 100%;
   max-width: ${rem(device.portraitTablet)};
   margin: 0 auto;
-  padding: ${space.xxl} 0;
+  padding: ${space.lg} 0;
 `;

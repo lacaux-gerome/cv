@@ -23,7 +23,7 @@ const oulinedTitle = css`
     right: -5px;
     height: ${rem(18)};
     background-color: ${color.secondary.base};
-    opacity: 0.2;
+    opacity: 1;
     top: 8px;
   }
 `;
