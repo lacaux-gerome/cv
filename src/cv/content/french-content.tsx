@@ -12,9 +12,9 @@ export const frenchContent: LangData = {
         explanation: (
           <>
             En charge du developpement front-end des outils de Ouihelp.
-            BackOffice, site web et application mobile. <br /> Dans une équipe
-            en croissance rapide j'ai pu évolué autant techniquement que
-            humainement.
+            Back-office, site web et application mobile. <br /> Dans une équipe
+            en croissance rapide, j'ai pu y évoluer autant techniquement
+            qu'humainement.
           </>
         ),
       },
@@ -29,7 +29,7 @@ export const frenchContent: LangData = {
         title: "Developpeur front-end chez Wizzmedia",
         explanation: (
           <>
-            Intégré dans une équipe expériementé et pluridisciplinaires j'étais
+            Intégré dans une équipe expérimentée et pluridisciplinaire, j'étais
             en charge d'intégrer et de développer les interfaces pour des
             clients comme{" "}
             <Link href="https://www.student-factory.com/fr">Vinci</Link>, ou{" "}
@@ -65,11 +65,11 @@ export const frenchContent: LangData = {
     content: [
       {
         date: "2016 - 2019",
-        name: "Hétic, Bachelor Web",
+        name: "HETIC, Bachelor Web",
       },
       {
         date: "2015 - 2016",
-        name: "Aix-Marseille Université, Mathématique suppérieur",
+        name: "Aix-Marseille Université, Licence de Mathématiques supérieures",
       },
     ],
   },

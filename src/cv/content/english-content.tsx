@@ -10,11 +10,11 @@ export const enContent = {
         title: "Front end Developper at Ouihelp",
         explanation: (
           <>
-            I was in charge of the front-end development of internal tools of
+            I was in charge of the front-end development for internals tools at
             Ouihelp. The backOffice, the website and the mobile application.{" "}
-            <br /> In a growing team i could technicaly and humanly evolved.
-            Interfaces are now used by hundreds of caregivers or manager
-            everyday.
+            <br /> In fast a growing team i could technicaly and humanly evolved
+            very fast. Interfaces are used by hundreds of caregivers and
+            managers everyday.
           </>
         ),
       },
@@ -29,11 +29,12 @@ export const enContent = {
         title: "Front end Developper at Wizzmedia",
         explanation: (
           <>
-            Intégré dans une équipe expériementé et pluridisciplinaires j'étais
-            en charge d'intégrer et de développer les interfaces pour des
-            clients comme{" "}
+            Inside an experimented and multidisciplinary team. My job was to
+            intergrate and develop interfaces for clients like
             <Link href="https://www.student-factory.com/fr">Vinci</Link>, or{" "}
-            <Link href="https://www.feed.co/">Feed</Link>
+            <Link href="https://www.feed.co/">Feed</Link>. This experience bring
+            me a good sense of details and an good feeling with product and QA
+            owner.
           </>
         ),
       },
