@@ -1,6 +1,8 @@
 import React from "react";
-import { Link } from "../components/atoms/link";
 import { LangData } from ".";
+
+import { Link } from "../components/atoms/link";
+import { List } from "cv/components/atoms/list";
 
 export const frenchContent: LangData = {
   mainTitle: "Curriculum vitae",
@@ -11,15 +13,50 @@ export const frenchContent: LangData = {
         title: "Developpeur front-end chez Ouihelp",
         explanation: (
           <>
-            En charge du developpement front-end des outils de Ouihelp.
-            Back-office, site web et application mobile. <br /> Dans une équipe
-            en croissance rapide, j'ai pu y évoluer autant techniquement
-            qu'humainement.
+            <p>
+              En charge du developpement front-end des outils de Ouihelp.
+              Back-office, site web et application mobile. <br /> Dans une
+              équipe en croissance rapide, j'ai pu y évoluer autant
+              techniquement qu'humainement.
+            </p>
+            <br />
+            <p>
+              <strong>
+                Ce que j'ai fais plus en détails{" "}
+                <span aria-label="émojie lunette" role="img">
+                  🧐
+                </span>
+                :{" "}
+              </strong>
+            </p>
+            <List>
+              <li>
+                AB testing d'interface et mise en place d'analytics afin d'en
+                mesurer les performances.
+              </li>
+              <li>
+                Écriture de cadrages techniques et modélisation de solutions
+                techniques via diagrames, schéma, RFC...
+              </li>
+              <li>
+                Force de proposition d'évolution techniques forte dans les
+                différents projets. Présentation à l'équipe via des supports
+                types keynote afin d'accompagné l'équipe dans sa transtion.
+              </li>
+              <li>
+                Intégration de maquettes sur Figma assurant la cross
+                compatibilitée sur les différents navigateurs.
+              </li>
+              <li>
+                Code review et organisation de la monté en compétences des
+                nouveaux éléments de l'équipe
+              </li>
+            </List>
           </>
         ),
       },
       additionalInfos: {
-        date: "Juillet 2018 - Mai 2020",
+        date: "Juillet 2018 - Aout 2020",
         technos: ["React", "React Native", "RxJS"],
       },
     },
@@ -34,6 +71,27 @@ export const frenchContent: LangData = {
             clients comme{" "}
             <Link href="https://www.student-factory.com/fr">Vinci</Link>, ou{" "}
             <Link href="https://www.feed.co/">Feed</Link>
+            <br />
+            <p>
+              <strong>
+                Ce que j'ai fais plus en détails{" "}
+                <span aria-label="émojie lunette" role="img">
+                  🧐
+                </span>
+                :{" "}
+              </strong>
+            </p>
+            <List>
+              <li>
+                Cadrage et estimation de temps d'intégration depuis les
+                maquettes.
+              </li>
+              <li>
+                Monté en compétence et réalisation rapide de sites divers allant
+                de l'e commerce au site vitrine.
+              </li>
+              <li></li>
+            </List>
           </>
         ),
       },
