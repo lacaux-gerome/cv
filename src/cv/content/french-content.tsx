@@ -90,7 +90,10 @@ export const frenchContent: LangData = {
                 Monté en compétence et réalisation rapide de sites divers allant
                 de l'e commerce au site vitrine.
               </li>
-              <li></li>
+              <li>
+                Mise en place de CI de pair avec les chefs de projets afin
+                d'échanger avec le client tout au long du développement
+              </li>
             </List>
           </>
         ),
@@ -109,6 +112,24 @@ export const frenchContent: LangData = {
             Nous avons développé un outil professionnel répondant aux
             problématiques des équipes de maintenance de la SNCF. Outil
             maintenant utilisé par plus 200 techniciens au quotidien.
+            <br />
+            <p>
+              <strong>
+                Ce que j'ai fais plus en détails{" "}
+                <span aria-label="émojie lunette" role="img">
+                  🧐
+                </span>
+                :{" "}
+              </strong>
+            </p>
+            <List>
+              <li>Remonté UX/UI on plus proche des équipes</li>
+              <li>
+                Intégration d'interface puis tests unitaire, de scénario et end
+                to end. Tout ceci afin d'assurer le bon fonctionnement dans le
+                présent et dans le futur de celle ci.
+              </li>
+            </List>
           </>
         ),
       },
