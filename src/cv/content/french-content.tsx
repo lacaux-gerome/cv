@@ -1,10 +1,54 @@
-import React from "react";
-import { Link } from "../components/atoms/link";
-import { LangData } from ".";
+import { Link } from "@/components/atoms/link";
+import { LangData } from "@/content";
+import { BulletList } from "@/components/atoms/bullet-list";
 
 export const frenchContent: LangData = {
   mainTitle: "Curriculum vitae",
   experiences: [
+    {
+      mainInfos: {
+        status: "CDI",
+        title: "Senior Software Engineer chez Ouihelp",
+        explanation: (
+          <>
+            Mon role évoluant avec les années chez Ouihelp, je suis maintenant,
+            de la mise en place de bonnes pratiques, de l'architecture tout ceci
+            faisant corps dans l'ajout de nouvelles fonctionnalité permettant de
+            faire avancer le projet. <br />
+            <br />
+            <strong>
+              Ci dessous quelques missions que je peux réaliser au quotidien :
+            </strong>
+            <BulletList
+              items={[
+                {
+                  text: "Gestion de projet",
+                },
+                {
+                  text: "Réalisation technique (feature)",
+                },
+                {
+                  text: "Écriture de RFC",
+                },
+                {
+                  text: "Code review",
+                },
+                {
+                  text: "Pair programming",
+                },
+                {
+                  text: "Architecture et lead sur un projet de Design system",
+                },
+              ]}
+            ></BulletList>
+          </>
+        ),
+      },
+      additionalInfos: {
+        date: "Mai 2020 - Aujourd'hui",
+        technos: ["React", "React Native Expo", "Typescript"],
+      },
+    },
     {
       mainInfos: {
         status: "CDI",
@@ -85,8 +129,8 @@ export const frenchContent: LangData = {
       mail: {
         explanation: "pour me contacter",
         label: "Email",
-        url: "&to=gerome.lacaux@hetic.net&su=Hello 👋🏻",
-        content: "gerome.lacaux@hetic.net",
+        url: "&to=lacaux.g@gmail.com&su=Hello 👋🏻",
+        content: "lacaux.g@gmail.com",
       },
       linkedin: {
         explanation: "pour en savoir plus sur mon parcours",

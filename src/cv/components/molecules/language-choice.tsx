@@ -2,9 +2,9 @@ import React, { useCallback } from "react";
 import styled, { css } from "styled-components";
 import { rem } from "polished";
 
-import { SupportedLanguage } from "cv/content";
-import { space, fontFamilyName, font, color } from "styles/const";
 import { ifProp } from "styled-tools";
+import { SupportedLanguage } from "@/content";
+import { color, font, fontFamilyName, space } from "@styles/const";
 
 type LanguageChoiceProps = {
   chosenLanguage: SupportedLanguage;

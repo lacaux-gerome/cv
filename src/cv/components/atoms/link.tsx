@@ -1,7 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { color } from "../../../styles/const";
 import { PropsWithChildren } from "react";
+import styled from "styled-components";
+import { color } from "@styles/const";
 
 export const Link = styled.a`
   text-decoration: none;

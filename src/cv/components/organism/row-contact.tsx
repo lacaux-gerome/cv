@@ -1,19 +1,12 @@
-import React from "react";
 import styled from "styled-components";
 import { rem } from "polished";
 import breakpoint from "styled-components-breakpoint";
 
-import { ContactType } from "../../content";
-import { Title } from "../atoms/title";
-import {
-  space,
-  color,
-  font,
-  fontFamilyName,
-  device,
-} from "../../../styles/const";
-import { ContentWrapper } from "../layout/content";
-import { LinkToEmail, Link } from "../atoms/link";
+import { ContactType } from "@/content";
+import { Title } from "@/components/atoms/title";
+import { LinkToEmail, Link } from "@/components/atoms/link";
+import { ContentWrapper } from "@/components/layout/content";
+import { space, color, font, device, fontFamilyName } from "@styles/const";
 
 type RowContactProps = ContactType;
 

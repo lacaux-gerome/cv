@@ -1,14 +1,14 @@
 import React, { PropsWithChildren } from "react";
 import styled, { css } from "styled-components";
 import { rem } from "polished";
-import { switchProp, ifProp } from "styled-tools";
-import { color, fontFamilyName, font } from "../../../styles/const";
+import { switchProp } from "styled-tools";
+import { color, fontFamilyName, font } from "@styles/const";
 
 type TitleProps = {
   type: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
   addtionalStyle?: "outlined";
   className?: string;
-  style?: any;
+  style?: React.CSSProperties;
   bold?: boolean;
   italic?: boolean;
 };
@@ -56,16 +56,6 @@ export const Title = styled(
   ${switchProp("addtionalStyle", {
     outlined: oulinedTitle,
   })};
-  ${ifProp(
-    "bold",
-    css`
-      font-weight: ${font.weight.bold};
-    `
-  )};
-  ${ifProp(
-    "italic",
-    css`
-      font-style: italic;
-    `
-  )};
+  ${(props) => (props.bold ? `font-weight: ${font.weight.bold};` : "")};
+  ${(props) => (props.italic ? `font-style: italic;` : "")};
 `;

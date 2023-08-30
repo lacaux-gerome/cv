@@ -1,8 +1,6 @@
-import React from "react";
-
-import { ContentWrapper } from "../layout/content";
-import { Title } from "../atoms/title";
-import { Dot } from "../atoms/dot";
+import { Dot } from "@/components/atoms/dot";
+import { Title } from "@/components/atoms/title";
+import { ContentWrapper } from "@/components/layout/content";
 
 type HeadProps = {
   mainTitle: string;

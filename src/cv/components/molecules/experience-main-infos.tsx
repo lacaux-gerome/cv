@@ -1,10 +1,9 @@
-import React from "react";
 import { rem } from "polished";
 import styled from "styled-components";
 
-import { Title } from "../atoms/title";
-import { space, color } from "../../../styles/const";
-import { ExperienceMainInfosType } from "../../content";
+import { Title } from "@/components/atoms/title";
+import { ExperienceMainInfosType } from "@/content";
+import { space, color } from "@styles/const";
 
 export type ExperienceMainInfosProps = ExperienceMainInfosType;
 
