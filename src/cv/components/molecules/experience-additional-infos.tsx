@@ -1,9 +1,8 @@
-import React from "react";
 import styled from "styled-components";
 import { rem } from "polished";
-import { Title } from "../atoms/title";
-import { fontFamilyName, color } from "../../../styles/const";
-import { ExperienceAdditionalInfosType } from "../../content";
+import { Title } from "@/components/atoms/title";
+import { ExperienceAdditionalInfosType } from "@/content";
+import { fontFamilyName, color } from "@styles/const";
 
 export type ExperienceAdditionalInfosProps = ExperienceAdditionalInfosType;
 

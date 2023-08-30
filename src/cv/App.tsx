@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import { createContext, useState } from "react";
 import styled from "styled-components";
 import { rem } from "polished";
 

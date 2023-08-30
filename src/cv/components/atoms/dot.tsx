@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { rem } from "polished";
-
-import { color, font } from "styles/const";
+import { color, font } from "@styles/const";
 
 export const Dot = styled.span`
   &::before {

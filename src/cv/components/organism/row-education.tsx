@@ -1,12 +1,11 @@
-import React from "react";
-import { rem } from "polished";
 import styled, { css } from "styled-components";
+import { rem } from "polished";
 
-import { EducationType } from "../../content";
+import { Title } from "@/components/atoms/title";
+import { ContentWrapper } from "@/components/layout/content";
+import { EducationType } from "@/content";
+import { space, color, font, device } from "@styles/const";
 
-import { ContentWrapper } from "../layout/content";
-import { space, color, device, font } from "../../../styles/const";
-import { Title } from "../atoms/title";
 import { ifProp } from "styled-tools";
 
 type RowEducationProps = EducationType;

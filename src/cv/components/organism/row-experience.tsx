@@ -1,17 +1,15 @@
-import React from "react";
+import { space, color } from "@styles/const";
 import styled from "styled-components";
-import { ContentWrapper } from "../layout/content";
-import { space, color } from "../../../styles/const";
 
+import { ContentWrapper } from "@/components/layout/content";
 import {
   ExperienceAdditionalInfosProps,
   ExperienceAdditionalInfos,
-} from "../molecules/experience-additional-infos";
-
+} from "@/components/molecules/experience-additional-infos";
 import {
-  ExperienceMainInfos,
   ExperienceMainInfosProps,
-} from "../molecules/experience-main-infos";
+  ExperienceMainInfos,
+} from "@/components/molecules/experience-main-infos";
 
 type RowExperienceProps = {
   leftContent: ExperienceAdditionalInfosProps;

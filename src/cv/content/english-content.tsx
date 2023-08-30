@@ -1,5 +1,4 @@
-import React from "react";
-import { Link } from "cv/components/atoms/link";
+import { Link } from "@/components/atoms/link";
 
 export const enContent = {
   mainTitle: "Resume",
@@ -86,8 +85,8 @@ export const enContent = {
       mail: {
         explanation: "to contact me",
         label: "Email",
-        url: "&to=gerome.lacaux@hetic.net&su=Hello 👋🏻",
-        content: "gerome.lacaux@hetic.net",
+        url: "&to=lacaux.g@gmail.com&su=Hello 👋🏻",
+        content: "lacaux.g@gmail.com",
       },
       linkedin: {
         explanation: "to get more informations about me",
